@@ -4,44 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exempel</title>
+    <link rel="stylesheet" href="design-showcase.html">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Capriola">
+    <link rel="stylesheet" href="Book_logo.svg">
 </head>
 <body>
-    <div class="container-wrapper">
-        <a href="#" class="container">
-            <div class="box">
-                <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="First page" class="image">
-                <div class="text-content">Hello everybody, My name is Markiplier</div>
-            </div>
-        </a>
 
-        <a href="#" class="container">
-            <div class="box">
-                <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="First page" class="image">
-                    <div class="text-content">Hello everybody, My name is Markiplier</div>
-            </div>
-        </a>
-    </div>
-    <h2 style="text-align: center; padding-bottom: 60px;">yo ass tweaking jigsaw</h2>
-    <div class="campaign-card-left">
-        <div class="larger-box">
-            <div class="larger-box_content">
-                ::before
-                <h2 class="larger-box_title">Vi bryr oss om planeten, människorna som bor där och samhället</h2>
-                <div class="larger-box_description">
-                    <p>qeifbwhrbfnrfwnrgunowirngntrgoenutgngwnoifveriotrngwnrgoejntborrgirtgimtrg</p>
-                    <p></p>
-                </div>
-                <div class="larger-box_action-container">
-                    <a href="#">Läs mer</a>
-                </div>
-            </div>
-            <div class="larger-box_image">
-                <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Side picture" class="side-image">
-            </div>
+    <nav class="navbar">
+        <img src="Book_logo.svg" alt="Logo" class="navbar-logo">
+        <div class="logo-text">
+            <h1>Gutenlive</h1>
         </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Hem</a></li>
+            <li><a href="design-showcase.html">Om oss</a></li>
+            <li>
+                <a href="#" class="flip">Produkter <span> > </span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Produkt 1</a></li>
+                    <li><a href="#">Produkt 2</a></li>
+                    <li><a href="#">Produkt 3</a></li>
+                </ul>
+            </li>
+         </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Välkommen till Gutenlive!</h1>
+        <p>Där magi och teknologi har sammankopplats till tjänster för att hjälpa dig att växa. Låt oss se vad information kan göra tillsammans!</p>
+        <a href="#" class="btn">Se mer</a>
+    </section>
+
+    <main>
+        <div class="container-wrapper">
+            <a href="#" class="container">
+                <div class="box">
+                    <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="First page" class="image">
+                    <div class="text-content">Törstläkande drycker!</div>
+                    
+                </div>
+            </a>
+
+            <a href="#" class="container">
+                <div class="box">
+                    <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="First page" class="image">
+                    <div class="text-content">Sköna hjälmar och mössor!</div>
+                </div>
+            </a>
+
+            <a href="#" class="container">
+                <div class="box">
+                    <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="First page" class="image">
+                    <div class="text-content"> Smaksätta piller!</div>
+                </div>
+            </a>
+
+            <a href="#" class="container">
+                <div class="box">
+                    <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="First page" class="image">
+                    <div class="text-content">Intressanta böcker!</div>
+                </div>
+            </a>
+        </div>
+        <h2 align="center" style="padding-bottom: 50px; padding-top: 50px;">Global påverkan</h2>
+    </main>
+
+    <div class="section-container container-1">
+        <div class="text-box">
+            <h1>Utforska mer!</h1>
+            <p>Desto mer du spenderar kommer 20% till sjukhus och fattiga</p>
+            <a href="#" class="btn">Läs mer</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="round-image" alt="Representation">
     </div>
-    
-    
+
+    <div class="section-container container-2">
+        <div class="text-box">
+            <h1>Expandera sinnet!</h1>
+            <p>Varje bok är tillgjort av återanvända föremål så naturen kan växa</p>
+            <a href="#" class="btn">Läs mer</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="round-image" alt="Representation-2">
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+
 </body>
 </html>
