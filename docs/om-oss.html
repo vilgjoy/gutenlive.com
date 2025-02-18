@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om oss</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Capriola">
+    <link rel="stylesheet" href="Book_logo.svg">
+    <link rel="stylesheet" href="no-copyright-music-emotional-piano-296804.mp3">
+    <link rel="stylesheet" href="emotional-piano-music-dramatic-296400.mp3">
+    <link rel="stylesheet" href="daylight-piano-music-292993.mp3">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="Book_logo.svg" alt="Logo" class="navbar-logo">
+        <div class="logo-text">
+            <h1>Gutenlive</h1>
+        </div>
+        
+        <div class="music-player">
+            <select id="songSelector">
+                <option value="music/daylight-piano-music-292993.mp3">Daylight Piano</option>
+                <option value="music/no-copyright-music-emotional-piano-296804.mp3">Emotional</option>
+                <option value="music/emotional-piano-music-dramatic-296400.mp3">Dramatic</option>
+            </select>
+            <input type="range" id="volumeSlider" min="0" max="2" step="0.1" value="0.9">
+            <button id="playPauseBtn">▶</button>
+        </div>
+
+        <audio id="audioPlayer" loop>
+            <source src="music/daylight-piano-music-292993.mp3" type="audio/mpeg">
+            Your browser does not support the audio element, please use something else.
+        </audio>
+
+        <ul class="nav-links">
+            <li><a href="design-showcase.html">Hem</a></li>
+            <li><a href="om-oss.html">Om oss</a></li>
+            <li>
+                <a href="#" class="flip">Produkter <span> > </span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Produkt 1</a></li>
+                    <li><a href="#">Produkt 2</a></li>
+                    <li><a href="#">Produkt 3</a></li>
+                </ul>
+            </li>
+         </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+    </nav>
+
+    
+</body>
+</html>
